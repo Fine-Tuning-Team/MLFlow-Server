@@ -1,5 +1,6 @@
 FROM python:3.10-slim-bullseye
 RUN pip install --no-cache mlflow
+RUN pip install --no-cache psycopg2
 EXPOSE 5000
 RUN useradd -u 10014 appuser
 USER 10014
